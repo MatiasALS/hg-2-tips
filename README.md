@@ -94,6 +94,13 @@ PULL_REQUEST_TEMPLATE
     git switch main-test
     git merge nombreDelUsuario/nombre-de-la-feature-NÚMERO-DE-PR --no-commit
     git switch main  
+    
+    Conectar tú repositorio local, con el repositorio base
+    git remote add upstream url_del_repositorio_base.git
+    
+    Si la escuadra quiere recibir los últimos cambios del repositorio base, realizar lo ssiguiente:
+    git fetch upstream
+    git merge upstream/main
 ```
 ---
 
@@ -101,18 +108,18 @@ PULL_REQUEST_TEMPLATE
 
 #### 👽 Usuario (Hacks)
 ```sh
- 1. Deben crear 1 repositorio "hg_2_foo" Siendo foo el nombre del usuario asignado dentro del equipo
-    de (alfa, bravo, charlie, delta, echo) como administrador del repositorio en ese momento, más
+ 1. Deben crear 1 repositorio principal por cada ciclo "hg_2_foo" foo es el nombre del usuario asignado, dentro del equipo
+    de alias (alfa, bravo, charlie, delta, echo) como administrador del repositorio en ese momento del ciclo, más
     los archivos de README.md y CODE_OF_CONDUCT.md
  
  2. (Foo) crea la rama develop y anexa un archivo PULL_REQUEST_TEMPLATE.md dentro del repositorio /docs,
-    luego hacer merge con main el archivo PULL_REQUEST_TEMPLATE.md 
+    luego hacer merge con main
     
- 3. (Foo) debe hacer una feature donde va a detallar el CODE_OF_CONDUCT.md y debe estar en el mismo directorio
-    de /docs como debes crear el CODE_OF_CONDUCT.md acá tienes una dirección de ejemplo:
+ 3. (Foo) debe hacer una feature donde va a detallar el CODE_OF_CONDUCT.md tiene que estar en el mismo directorio
+    de /docs ahora como debes crear el CODE_OF_CONDUCT.md acá tienes una dirección de ejemplo:
     https://github.com/auth0/open-source-template/blob/master/CODE-OF-CONDUCT.md
 
- 4. (Foo) cuando tengas el CODE_OF_CONDUCT.md listo, tienes que integrar la feature a la rama develop y luego
+ 4. (Foo) cuando el CODE_OF_CONDUCT.md este listo, tienes que integrar la feature a la rama develop y luego
     anexar los cambios al ambiente principal, que es la rama main
  
  5. Cada usuario debe enviar 1 directorio con su nombre de alias con 10 archivos de extensión "js"
@@ -135,7 +142,7 @@ PULL_REQUEST_TEMPLATE
     feautre/delta-hacks
     feature/echo-hacks
     
- 5. (feature/foo-hacks) todos los integrantes de la escuadra, les toca resolver los 10 hacks y enviarlos
+ 5. (feature/foo-hacks) todos los integrantes de la escuadra, tienen que resolver los 10 hacks y enviarlos
      a la rama develop, como se específica en el punto 4.
      
      * HACK-1 
@@ -187,23 +194,23 @@ PULL_REQUEST_TEMPLATE
      |----PULL_REQUEST_TEMPLATE.md
      |----CODE_OF_CONDUCT.md
      /alfa
-     |---- con los 10 archivos de hacks listos
+     |---- con 10 archivos de hacks, listos
      /bravo
-     |---- con los 10 archivos de hacks listos
+     |---- con 10 archivos de hacks, listos
      /charlie
-     |---- con los 10 archivos de hacks listos
+     |---- con 10 archivos de hacks, listos
      /delta
-     |---- con los 10 archivos de hacks listos
+     |---- con 10 archivos de hacks, listos
      /echo
-     |---- con los 10 archivos de hacks listos
+     |---- con 10 archivos de hacks, listos
 ```     
  
 ---
 ## 🏆 H-2
 #### 👽 (Close Pull Request)
 ```sh
-7. Ahora cada participante envia una feature, con un archivo de extensión "txt" con el nombre de su alias,
-   esta feature la deben enviar directamente al ambiente principal(main), el administrador del repositorio
+7. Ahora cada participante envia una feature, con 1 archivo de extensión ".txt" con el nombre de su alias,
+   esta feature la deben enviar directamente al ambiente principal(main), ahora el administrador del repositorio
    anula la solicitud pull request
  
 8  Los participantes deben ir a la feature(rama) en su github y enviar la solicitud del PR a la dirección
@@ -221,10 +228,11 @@ PULL_REQUEST_TEMPLATE
  
 11. Por último, la escuadra necesita crear un archivo con su alias "foo_log.js" en el archivo escribir:
     console.log();
-    seguramente el vscode te dará una alerta de error, aunque la intensión es enviar un código con defecto  
+    seguramente el vscode dará una alerta de error, aunque la intención es enviar un código con defecto  
  
-12. (Foo) debes descargar cada solicitud de PR con el archivo de "foo_log.js"
-     Busca el número de la Pull Request en GitHub
+12. (Foo) debe descargar cada solicitud de PR con el archivo de "foo_log.js"
+     Busca el número de la Pull Request en GitHub y ve a la terminal, para descargar la feature de la
+     solicitud del pull request y realizar el code review, en una rama de prueba main-test
      
      git fetch origin pull/id_del_pull_request/head:nombreDelUsuario/nombre-de-la-feature-NÚMERO-DE-PR
      git switch main-test
@@ -236,7 +244,7 @@ PULL_REQUEST_TEMPLATE
 14. Los integrantes deben enviar la tarea devuelta con un texto dentro del console.log("foo") como recomendación
     enviar su alias.
  
-15. (Foo) debe hacer los mismos pasos del punto 13. y si la feature enviada se encuentra estable, aceptar el PR.
+15. (Foo) debe hacer los mismos pasos del punto 13. Si la feature enviada se encuentra estable, aceptar el PR.
     hacia la rama develop y luego enviar los cambios al ambiente de producción(main)
     consejo elimina las ramas nombreDelUsuario/nombre-de-la-feature-NÚMERO-DE-PR antes de realizar el "code review"
     del paso 13.
