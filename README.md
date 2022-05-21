@@ -110,7 +110,7 @@ PULL_REQUEST_TEMPLATE
 ```sh
  1. Deben crear 1 repositorio principal por cada ciclo "hg_2_foo" foo es el nombre del usuario asignado, dentro del equipo
     de alias (alfa, bravo, charlie, delta, echo) como administrador del repositorio en ese momento del ciclo, más
-    los archivos de README.md y CODE_OF_CONDUCT.md
+    los archivos de README.md.
  
  2. (Foo) crea la rama develop y anexa un archivo PULL_REQUEST_TEMPLATE.md dentro del repositorio /docs,
     luego hacer merge con main
