@@ -98,7 +98,7 @@ PULL_REQUEST_TEMPLATE
     Conectar tú repositorio local, con el repositorio base
     git remote add upstream url_del_repositorio_base.git
     
-    Si la escuadra quiere recibir los últimos cambios del repositorio base, realizar lo ssiguiente:
+    Si la escuadra quiere recibir los últimos cambios del repositorio base, realizar lo siguiente:
     git fetch upstream
     git merge upstream/main
 ```
@@ -122,18 +122,18 @@ PULL_REQUEST_TEMPLATE
  4. (Foo) cuando el CODE_OF_CONDUCT.md este listo, tienes que integrar la feature a la rama develop y luego
     anexar los cambios al ambiente principal, que es la rama main
  
- 5. Cada usuario debe enviar 1 directorio con su nombre de alias con 10 archivos de extensión "js"
+ 5. Cada usuario debe enviar 1 directorio con su nombre de alias con 10 archivos de extensión ".py"
     /foo
-    |---- hack1.js
-    |---- hack2.js
-    |---- hack3.js
-    |---- hack4.js
-    |---- hack5.js
-    |---- hack6.js
-    |---- hack7.js
-    |---- hack8.js
-    |---- hack9.js
-    |---- hack10.js
+    |---- hack1.py
+    |---- hack2.py
+    |---- hack3.py
+    |---- hack4.py
+    |---- hack5.py
+    |---- hack6.py
+    |---- hack7.py
+    |---- hack8.py
+    |---- hack9.py
+    |---- hack10.py
 
     * RAMAS
     feature/alfa-hacks
@@ -146,7 +146,7 @@ PULL_REQUEST_TEMPLATE
      a la rama develop, como se específica en el punto 4.
      
      * HACK-1 
-     //vaciar el array
+     //vaciar la lista
      [100,200,300,400,500,600,700]  result >  []  
      
      * HACK-2
@@ -162,7 +162,7 @@ PULL_REQUEST_TEMPLATE
      [100,200,300,400,500,600,700]  result >  [100,200,400,600,700]
      
      * HACK-5 
-     //clonar array
+     //clonar lista
      [100,200,300,400,500,600,700]  result >  [100,200,300,400,500,600,700]
      
      * HACK-6 
@@ -226,11 +226,11 @@ PULL_REQUEST_TEMPLATE
 10. Desde Oplesk enviamos (Felicitaciones a todos los integrantes de la escuadra), llegar a este punto, requiere de un 
     gran esfuerzo, compromiso y sobre todo, de un excelente trabajo de equipo.
  
-11. Por último, la escuadra necesita crear un archivo con su alias "foo_log.js" en el archivo escribir:
-    console.log();
+11. Por último, la escuadra necesita crear un archivo con su alias "foo_log.py" en el archivo escribir:
+    print(;)
     seguramente el vscode dará una alerta de error, aunque la intención es enviar un código con defecto  
  
-12. (Foo) debe descargar cada solicitud de PR con el archivo de "foo_log.js"
+12. (Foo) debe descargar cada solicitud de PR con el archivo de "foo_log.py"
      Busca el número de la Pull Request en GitHub y ve a la terminal, para descargar la feature de la
      solicitud del pull request y realizar el code review, en una rama de prueba main-test
      
@@ -239,9 +239,9 @@ PULL_REQUEST_TEMPLATE
      git merge nombreDelUsuario/nombre-de-la-feature-NÚMERO-DE-PR --no-commit
      git switch main
  
-13. (Foo) declina el PR, con el comentario que el código le falta un string dentro del console.log("string")
+13. (Foo) declina el PR, con el comentario que el código le falta un string dentro del print("string")
  
-14. Los integrantes deben enviar la tarea devuelta con un texto dentro del console.log("foo") como recomendación
+14. Los integrantes deben enviar la tarea devuelta con un texto dentro del print("foo") como recomendación
     enviar su alias.
  
 15. (Foo) debe hacer los mismos pasos del punto 13. Si la feature enviada se encuentra estable, aceptar el PR.
