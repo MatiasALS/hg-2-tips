@@ -60,7 +60,7 @@ PULL_REQUEST_TEMPLATE
 - [ ] Echo
 
 # Tecnología
-- [ ] Javascript 
+- [ ] Python 
 - [ ] Markdown
 
 # Seleccione el tipo de actividad
